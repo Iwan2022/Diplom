@@ -3,3 +3,6 @@ remote_theme: pages-themes/cayman@v0.2.0
 title: Розробка web-сайту для ТОВ"Завод Укрбудмаш"
 
 description: дипломна робота Букало І.В.
+
+plugins:
+  - jekyll-remote-theme

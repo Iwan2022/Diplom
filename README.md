@@ -12,4 +12,4 @@
 
 * HTML
 * CSS
-* JavaSkript
+* JavaSсript

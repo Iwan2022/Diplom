@@ -13,3 +13,6 @@
 * HTML
 * CSS
 * JavaSсript
+
+## Посилання на сторінку сайту
+Готовий продукт опублікований на хостингу Firebase ([За посиланням](https://llc--zavod-ukrbudmash.web.app/)).

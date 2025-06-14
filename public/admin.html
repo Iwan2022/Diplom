@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель адміністратора</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+    <script src="admin.js" defer></script>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white text-gray-800 py-4 flex justify-between items-center shadow-md sticky top-0 z-10 rounded-md">
+        <div class="logo text-xl font-bold ml-4 text-blue-700">ТОВ"Завод Укрбудмаш</div>
+        <nav class="mr-4">
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-blue-500 no-underline">Головна</a></li>
+                <li><a href="products.html" class="hover:text-blue-500 no-underline">Продукти</a></li>
+                <li><a href="about.html" class="hover:text-blue-500 no-underline">Про Нас</a></li>
+                <li><a href="login.html" class="hover:text-blue-500 no-underline" id="login-status">Sing In / Log in</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto py-6 px-4"> <div id="admin-content" class="admin-container hidden bg-white p-6 rounded-lg shadow-md">
+            <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Панель адміністратора</h1>
+
+
+            <hr class="my-8 border-gray-300">
+
+            <h2 class="text-2xl font-semibold text-blue-700 mb-4">Додати/Редагувати Продукти</h2>
+            <form id="product-form" class="admin-form mb-8 bg-gray-50 p-5 rounded-md border border-gray-200">
+                <label for="product-name" class="block text-gray-700 font-medium mb-1">Назва продукту:</label>
+                <input type="text" id="product-name" name="product-name" required class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-3">
+
+                <label for="product-description" class="block text-gray-700 font-medium mb-1">Опис продукту:</label>
+                <textarea id="product-description" name="product-description" required class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-3"></textarea>
+
+                <label for="product-image" class="block text-gray-700 font-medium mb-1">URL зображення продукту:</label>
+                <input type="text" id="product-image" name="product-image" placeholder="https://via.placeholder.com/300" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-3">
+
+                <label for="product-price" class="block text-gray-700 font-medium mb-1">Ціна продукту (необов'язково):</label>
+                <input type="text" id="product-price" name="product-price" placeholder="наприклад, 120000 грн" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4">
+
+                <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-md transition duration-300">Додати Продукт</button>
+                <div id="product-message" class="message hidden mt-3 p-2 rounded-md text-sm"></div>
+            </form>
+
+            <hr class="my-8 border-gray-300">
+
+            <h2 class="text-2xl font-semibold text-blue-700 mb-4">Існуючі Продукти</h2>
+            <div id="product-list" class="mt-4">
+                <p class="text-gray-600">Завантаження продуктів...</p>
+            </div>
+        </div>
+
+        <div id="access-denied" class="message error-message bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative text-center">
+            <p class="text-lg font-semibold mb-2">Відмовлено в доступі!</p>
+            <p>Ця сторінка доступна лише для адміністраторів. Будь ласка, <a href="login.html" class="text-blue-600 hover:underline">увійдіть</a> як адміністратор.</p>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 rounded-md mt-8">
+        <div class="footer-content container mx-auto flex justify-between items-start px-4">
+            <div class="social-network">
+                <h3 class="text-lg font-semibold">Social Network:</h3>
+                <div class="flex space-x-4 mt-2">
+                    <a href="#" class="text-gray-300 hover:text-blue-500 no-underline text-xl"><i
+                                class="fab fa-google"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-blue-500 no-underline text-xl"><i
+                                class="fas fa-star"></i></a>
+                </div>
+            </div>
+            <div class="contacts">
+                <h3 class="text-lg font-semibold text-right">Contacts:</h3>
+                <p class="text-gray-300 text-right mt-2">+0123456789</p>
+                <p class="text-gray-300 text-right">example@company.com</p>
+            </div>
+        </div>
+        <p class="text-center mt-4">©2025 Розробив Букало Іван, 45 група. Всі права захищені.</p>
+    </footer>
+</body>
+</html>

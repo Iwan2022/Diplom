@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна Сторінка</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white text-gray-800 py-4 flex justify-between items-center shadow-md sticky top-0 z-10 rounded-md">
+    <div class="logo text-xl font-bold ml-4 text-blue-700">ТОВ"Завод Укрбудмаш</div>
+        <nav class="mr-4">
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-blue-500 no-underline font-semibold">Головна</a></li>
+                <li><a href="products.html" class="hover:text-blue-500 no-underline">Продукти</a></li>
+                <li><a href="about.html" class="hover:text-blue-500 no-underline">Про Нас</a></li>
+                <li><a href="login.html" class="hover:text-blue-500 no-underline" id="login-status">Sing In / Log in</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto py-6">
+        <section class="hero bg-gradient-to-r from-blue-100 to-purple-100 text-gray-800 text-center rounded-lg py-10 px-4 flex flex-col justify-content-center items-center">
+            <h1 class="text-3xl font-bold mb-4 text-blue-700">Ласкаво просимо на наш сайт!</h1>
+            <p class="text-lg mb-8 max-w-2xl">Не дозволяйте забрудненій або старій трансформаторній оливі впливати на ефективність вашого обладнання. Скористайтеся нашими послугами та забезпечте тривалий та надійний термін служби своїх електроустановок.</p>
+            <a href="products.html" class="bg-green-500 text-white py-3 px-6 rounded-full hover:bg-green-700 transition duration-300 no-underline">Перейти до Продуктів</a>
+        </section>
+
+        <section class="featured-products py-12">
+            <h2 class="text-2xl font-bold text-center mb-8 text-blue-700">Рекомендовані Продукти</h2>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <div class="product-card">
+                        <img src="https://globecore.ua/wp-content/uploads/2021/04/12R.jpg" alt="Продукт 1">
+                        <h3 class="text-xl font-semibold mb-4">СММ-12Р установка регенерації трансформаторної оливи з реактивацією сорбенту</h3>
+                        <p class="text-gray-600 mb-4">Унікальність установок СММ-12Р полягає в їх здатності проводити регенерацію ізоляційних масел прямо в трансформаторі.</p>
+                        <a href="products.html" class="text-center">Детальніше</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="product-card">
+                        <img src="https://globecore.ua/wp-content/uploads/2023/01/usb-2-2.jpg" alt="Продукт 2">
+                        <h3 class="text-xl font-semibold mb-4">Установка для виробництва бітумних емульсій УCБ-2 (2 м3/год)</h3>
+                        <p class="text-gray-600 mb-4">Установка для приготування бітумнимх емульсій УCБ-2 призначена для одержання як катіонних, так і аніонних бітумних емульсій.</p>
+                        <a href="products.html" class="text-center">Детальніше</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="product-card">
+                        <img src="https://globecore.ua/wp-content/uploads/2019/12/UZM.jpg" alt="Продукт 3">
+                        <h3 class="text-xl font-semibold mb-4">Установка заміни масла в редукторах вітрогенераторів CMM-G</h3>
+                        <p class="text-gray-600 mb-4">Установка призначена для триступеневої заміни масла в редукторах вітряних турбін. Вона забезпечує оперативне і якісне обслуговування масляної системи.</p>
+                        <a href="products.html" class="text-center">Детальніше</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="product-card">
+                        <img src="https://globecore.ua/wp-content/uploads/2019/12/UVM-4-7.jpeg" alt="Продукт 4">
+                        <h3 class="text-xl font-semibold mb-4">УВМ-6/7 – установка дегазації та очищення електроізоляційної оливи</h3>
+                        <p class="text-gray-600 mb-4">Установка для обробки трансформаторної оливи призначена для вакуумування трансформаторів, очищення від механічних домішок, очищення від води. </p>
+                        <a href="products.html" class="text-center">Детальніше</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="product-card">
+                         <img src="https://globecore.ua/wp-content/uploads/2019/12/rbb-1.jpg" alt="Продукт 5">
+                        <h3 class="text-xl font-semibold mb-4">Установка змішуюча швидкодіюча УСБ-1 (4 м3/год)</h3>
+                        <p class="text-gray-600 mb-4">Установка змішуюча швидкодіюча УСБ-1 для виробництва біодизелю. Підготовлене масло подається в нагрівач, де воно нагрівається до температури процесу. З нагрівача масло подається в реактор.</p>
+                        <a href="products.html" class="text-center">Детальніше</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="product-card">
+                         <img src="https://globecore.ua/wp-content/uploads/2019/11/UVB-18.jpg" alt="Продукт 6">
+                        <h3 class="text-xl font-semibold mb-4">Установка для виробництва бітумних емульсій УCБ-2 (8 м3/год)</h3>
+                        <p class="text-gray-600 mb-4">Установка для приготування бітумнимх емульсій УCБ-2 призначена для одержання як катіонних, так і аніонних бітумних емульсій.</p>
+                        <a href="products.html" class="text-center">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-control-button" id="prev-button"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-control-button" id="next-button"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section class="youtube-videos py-12">
+            <h2 class="text-2xl font-bold text-center mb-8 text-blue-700">Дивіться на YouTube</h2>
+            <div class="video-grid">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/sjv3A69aLfM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/ZAwpOJDbzjI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/PS60UY0K1cg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 rounded-md">
+        <div class="footer-content container mx-auto flex justify-between items-start">
+            <div class="social-network">
+                <h3 class="text-lg font-semibold">Social Network:</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-blue-500 no-underline text-xl"><i class="fab fa-google"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-blue-500 no-underline text-xl"><i class="fas fa-star"></i></a>
+                </div>
+            </div>
+            <div class="contacts">
+                <h3 class="text-lg font-semibold text-right">Contacts:</h3>
+                <p class="text-gray-300 text-right">+0123456789</p>
+                <p class="text-gray-300 text-right">example@company.com</p>
+            </div>
+        </div>
+        <p class="text-center mt-4">©2025 Розробив Букало Іван, 45 група. Всі права захищені.</p>
+    </footer>
+</body>
+</html>

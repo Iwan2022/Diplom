@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація / Вхід</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="login.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-white text-gray-800 py-4 flex justify-between items-center shadow-md sticky top-0 z-10 rounded-md">
+        <div class="logo text-xl font-bold ml-4 text-blue-700">ТОВ"Завод Укрбудмаш</div>
+        <nav class="mr-4">
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-blue-500 no-underline">Головна</a></li>
+                <li><a href="products.html" class="hover:text-blue-500 no-underline">Продукти</a></li>
+                <li><a href="about.html" class="hover:text-blue-500 no-underline">Про Нас</a></li>
+                <li><a href="login.html" class="hover:text-blue-500 no-underline font-semibold">Sing In / Log in</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto py-6">
+        <div class="auth-container">
+            <h2 id="auth-title">Вхід</h2>
+            <form id="auth-form" class="auth-form">
+                <div class="form-group">
+                    <label for="email">Електронна пошта</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" id="auth-button">Увійти</button>
+            </form>
+            <p class="form-switch" id="form-switch">Не маєте облікового запису? <span id="switch-text">Зареєструйтесь</span></p>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 rounded-md">
+        <div class="footer-content container mx-auto flex justify-between items-start">
+            <div class="social-network">
+                <h3 class="text-lg font-semibold">Social Network:</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-blue-500 no-underline text-xl"><i class="fab fa-google"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-blue-500 no-underline text-xl"><i class="fas fa-star"></i></a>
+                </div>
+            </div>
+            <div class="contacts">
+                <h3 class="text-lg font-semibold text-right">Contacts:</h3>
+                <p class="text-gray-300 text-right">+0123456789</p>
+                <p class="text-gray-300 text-right">example@company.com</p>
+            </div>
+        </div>
+        <p class="text-center mt-4">©2025 Розробив Букало Іван, 45 група. Всі права захищені.</p>
+    </footer>
+</body>
+
+</html>
